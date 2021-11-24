@@ -2,7 +2,6 @@
 Documentation           Ações do sistema
 
 
-
 *Keywords*
 
 Go To Signup Form
@@ -26,11 +25,6 @@ User Should Be Registered
     ${expect_messege}                   Set Variable        css=p >> text=Agora você faz parte da Getgeeks.
     Wait For Elements State             ${expect_messege}       visible     5
 
-Alert Span Should Be
-    [Arguments]                         ${expect_alert}
-
-    Wait For Elements State             css=span[class=error] >> text=${expect_alert}
-    ...                                 visible     5
 
 Alert Spans Should Be 
     [Arguments]                         ${expect_alerts}
